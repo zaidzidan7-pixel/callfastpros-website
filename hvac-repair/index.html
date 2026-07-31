@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency HVAC Repair 24/7 - CallFastPros</title>
+    <meta name="description" content="Fast HVAC repair and installation services. Connected with certified professionals in minutes. 24/7 emergency service available.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #003366 0%, #004C99 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-cta {
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A2A 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A2A 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .big-cta-button {
+            background: white;
+            color: #E55A2A;
+            padding: 20px 50px;
+            font-size: 24px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .big-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* TRUST BADGES */
+        .trust-section {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        /* CONTENT SECTION */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .content h2 {
+            color: #003366;
+            font-size: 32px;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #FF6B35;
+            padding-bottom: 15px;
+        }
+
+        .content h3 {
+            color: #FF6B35;
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .content li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .content li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #FF6B35;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* BENEFITS GRID */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .benefit-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #FF6B35;
+            text-align: center;
+        }
+
+        .benefit-card h4 {
+            color: #003366;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .benefit-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* CTA SECTION (MIDDLE) */
+        .cta-middle {
+            background: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-middle h2 {
+            border: none;
+            margin-bottom: 30px;
+        }
+
+        .cta-middle p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .secondary-cta {
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A2A 100%);
+            color: white;
+            padding: 16px 40px;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .secondary-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .testimonials-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            color: #003366;
+            font-size: 28px;
+            margin-bottom: 40px;
+            border: none;
+            padding: 0;
+        }
+
+        .testimonial-item {
+            background: #f9f9f9;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #FF6B35;
+        }
+
+        .testimonial-stars {
+            color: #FFA500;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .testimonial-text {
+            color: #555;
+            margin-bottom: 10px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            color: #003366;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* FAQ */
+        .faq {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .faq h2 {
+            color: #003366;
+            font-size: 28px;
+            margin-bottom: 40px;
+            border: none;
+            text-align: center;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            color: #FF6B35;
+            margin-bottom: 10px;
+            cursor: pointer;
+            user-select: none;
+            font-size: 16px;
+        }
+
+        .faq-item p {
+            color: #666;
+            margin-left: 20px;
+        }
+
+        /* FINAL CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #003366 0%, #004C99 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .final-cta h2 {
+            color: white;
+            border: none;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .final-cta-button {
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A2A 100%);
+            color: white;
+            padding: 18px 45px;
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+        }
+
+        .final-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.5);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #003366;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #FF6B35;
+        }
+
+        .footer-copy {
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .tcpa {
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .big-cta-button {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+
+            .trust-section {
+                gap: 15px;
+                font-size: 13px;
+            }
+
+            .content h2 {
+                font-size: 24px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-links a {
+                display: block;
+                margin: 8px 0;
+            }
+        }
+
+        /* ANIMATION */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content,
+        .benefits-grid,
+        .final-cta {
+            animation: slideUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="/">☎️ CallFastPros</a></div>
+            <a href="tel:1-800-HVAC-PRO" class="header-cta">☎️ Call Now</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Emergency HVAC Repair & Installation</h1>
+            <p>Your air stopped working? We connect you with certified HVAC professionals in under 5 minutes.</p>
+            
+            <a href="tel:1-800-HVAC-PRO" class="big-cta-button">📞 CALL NOW: 1-800-HVAC-PRO</a>
+
+            <div class="trust-section">
+                <div>✓ 100% Free Service</div>
+                <div>✓ Verified & Licensed</div>
+                <div>⭐⭐⭐⭐⭐ 4.9/5 (2000+ calls)</div>
+                <div>✓ 24/7 Available</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="content">
+        <h2>Why Choose CallFastPros for HVAC?</h2>
+
+        <h3>✅ Fast Response</h3>
+        <p>Connected to a certified professional in minutes, not hours or days. We understand that HVAC issues can't wait, especially during extreme weather.</p>
+
+        <h3>✅ Quality Guaranteed</h3>
+        <p>All our contractors are licensed, insured, and background-checked. You get peace of mind knowing your work is in expert hands.</p>
+
+        <h3>✅ Free Estimates</h3>
+        <p>No hidden fees or surprise charges. You'll know the cost upfront before any work begins.</p>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h4>💨 Fast Installation</h4>
+                <p>Professionals ready to upgrade or repair your system quickly</p>
+            </div>
+            <div class="benefit-card">
+                <h4>🔧 Expert Maintenance</h4>
+                <p>Keep your system running efficiently with professional tune-ups</p>
+            </div>
+            <div class="benefit-card">
+                <h4>💰 Cost Savings</h4>
+                <p>New systems save up to 40% on your energy bills</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 50px;">Services We Connect You With</h2>
+        <ul>
+            <li>Emergency AC Repair & Troubleshooting</li>
+            <li>Heating System Installation & Repair</li>
+            <li>Furnace Service & Replacement</li>
+            <li>Thermostat Installation & Upgrade</li>
+            <li>Ductwork Inspection & Cleaning</li>
+            <li>Heat Pump Installation (Energy Efficient)</li>
+            <li>Seasonal Maintenance & Tune-ups</li>
+            <li>Commercial HVAC Systems</li>
+        </ul>
+    </section>
+
+    <!-- MIDDLE CTA -->
+    <section class="cta-middle">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2>Stop Suffering in Uncomfortable Temperatures</h2>
+            <p>Don't wait another day in the heat or cold. Our verified HVAC professionals are standing by to help you right now.</p>
+            <a href="tel:1-800-HVAC-PRO" class="secondary-cta">📞 Call Now - 24/7 Available</a>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2>What Our Customers Say</h2>
+
+            <div class="testimonial-item">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonial-text">"My AC broke down on a Saturday at 95°F outside. I called CallFastPros and had a technician at my house in less than 2 hours. Best decision ever!"</div>
+                <div class="testimonial-author">— Jennifer M., Phoenix, Arizona</div>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonial-text">"Professionals from start to finish. They diagnosed the problem quickly and explained everything clearly. The price was fair and honest."</div>
+                <div class="testimonial-author">— David L., Dallas, Texas</div>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonial-text">"I was skeptical about using a service like this, but they connected me with someone who was reliable and professional. Highly recommend!"</div>
+                <div class="testimonial-author">— Maria C., Miami, Florida</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h4>❓ How quickly can I get help?</h4>
+            <p>In most cases, you'll be connected to a professional within 5 minutes. Response time depends on availability in your area.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>❓ Is there a service charge?</h4>
+            <p>CallFastPros is 100% free to use. You only pay the contractor directly for the actual work performed.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>❓ Are the professionals licensed and insured?</h4>
+            <p>Yes! All professionals in our network are licensed, insured, and background-checked for your safety and peace of mind.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>❓ What if I'm not satisfied?</h4>
+            <p>We only work with top-rated professionals with excellent track records. If you have issues, contact us immediately.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>❓ Do you serve my area?</h4>
+            <p>We serve most areas across the United States. Call us to confirm availability in your location.</p>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <h2>Ready to Fix Your HVAC?</h2>
+        <p>Stop dealing with uncomfortable temperatures. Our certified professionals are available 24/7</p>
+        <a href="tel:1-800-HVAC-PRO" class="final-cta-button">📞 CALL NOW: 1-800-HVAC-PRO</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms/">Terms</a>
+                <a href="/tcpa-disclosure/">TCPA Disclosure</a>
+                <a href="/">Back to Home</a>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 CallFastPros.com. All rights reserved.
+            </div>
+
+            <div class="tcpa">
+                <strong>TCPA Notice:</strong> By clicking "Call Now" or providing your phone number, you agree to receive calls from CallFastPros and our partner contractors. Standard rates may apply. You can opt-out anytime.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tracking phone clicks
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Phone call initiated from: ' + this.href);
+            });
+        });
+    </script>
+
+</body>
+</html>
