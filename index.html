@@ -457,9 +457,6 @@
                     <option value="hvac">🛠️ HVAC & Heating</option>
                     <option value="warehouse">💡 Warehouse Lighting</option>
                     <option value="plumbing">🚰 Plumbing & Water</option>
-                    <option value="locksmith">🔐 Locksmith 24/7</option>
-                    <option value="business-insurance">🏢 Business Insurance</option>
-                    <option value="asbestos">⚠️ Asbestos Removal</option>
                 </select>
                 <button class="hero-cta-btn" onclick="callNow()">📞 CALL A PRO NOW</button>
             </div>
@@ -476,44 +473,20 @@
     <section class="services">
         <div class="services-container">
             <div class="services-grid">
-                <!-- HOME & EMERGENCY -->
+                <!-- HOME SERVICES -->
                 <div class="service-category">
-                    <h3>🛠️ HOME & EMERGENCY</h3>
+                    <h3>🛠️ HOME SERVICES</h3>
                     <ul>
                         <li><a href="/hvac-repair/">HVAC & Heating</a></li>
                         <li><a href="/plumbing/">Plumbing & Water</a></li>
-                        <li><a href="/locksmith/">Locksmith & Auto</a></li>
-                        <li><a href="/floor-refinishing/">Floor Refinishing</a></li>
                     </ul>
                 </div>
 
-                <!-- COMMERCIAL & B2B -->
+                <!-- COMMERCIAL SERVICES -->
                 <div class="service-category">
-                    <h3>🏬 COMMERCIAL & B2B</h3>
+                    <h3>🏬 COMMERCIAL SERVICES</h3>
                     <ul>
                         <li><a href="/warehouse-lighting/">Warehouse Lighting</a></li>
-                        <li><a href="/asbestos-removal/">Asbestos Removal</a></li>
-                        <li><a href="/business-insurance/">Business Insurance</a></li>
-                        <li><a href="/corporate-travel/">Corporate Travel</a></li>
-                    </ul>
-                </div>
-
-                <!-- LEGAL & ADVISORY -->
-                <div class="service-category">
-                    <h3>⚖️ LEGAL & ADVISORY</h3>
-                    <ul>
-                        <li><a href="/elder-lawyer/">Elder Lawyer</a></li>
-                        <li><a href="/final-expense/">Final Expense</a></li>
-                        <li><a href="/insurance-consulting/">Insurance Consulting</a></li>
-                    </ul>
-                </div>
-
-                <!-- AUTO & EMERGENCY -->
-                <div class="service-category">
-                    <h3>🚗 AUTO & EMERGENCY</h3>
-                    <ul>
-                        <li><a href="/auto-glass/">Auto Glass</a></li>
-                        <li><a href="/locksmith-24-7/">Locksmith 24/7</a></li>
                     </ul>
                 </div>
             </div>
@@ -612,10 +585,7 @@
                 const urls = {
                     'hvac': '/hvac-repair/',
                     'warehouse': '/warehouse-lighting/',
-                    'plumbing': '/plumbing/',
-                    'locksmith': '/locksmith/',
-                    'business-insurance': '/business-insurance/',
-                    'asbestos': '/asbestos-removal/'
+                    'plumbing': '/plumbing/'
                 };
 
                 if (urls[service]) {
@@ -638,4 +608,4 @@
     </script>
 
 </body>
-</html>           
+</html>
