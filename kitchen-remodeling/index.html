@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Remodeling - Connect With Local Contractors | CallFastPros</title>
+    <meta name="description" content="Connect with independent local kitchen remodeling contractors for cabinets, countertops, flooring, and full renovations. Free service.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* HEADER STYLES */
+        header {
+            background: linear-gradient(135deg, #003366 0%, #004C99 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-cta {
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A2A 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #003366 0%, #004C99 50%, #1E90FF 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .hero-cta-btn {
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A2A 100%);
+            color: white;
+            padding: 16px 44px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 19px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .hero-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 14px;
+            margin-top: 35px;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* MAIN CONTENT */
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .content h2 {
+            color: #003366;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content > p {
+            text-align: center;
+            font-size: 17px;
+            color: #555;
+            max-width: 750px;
+            margin: 0 auto 50px auto;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #FF6B35;
+        }
+
+        .feature-card h3 {
+            color: #003366;
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* SERVICES LIST */
+        .services-list {
+            background: #f9f9f9;
+            padding: 80px 20px;
+        }
+
+        .services-list-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .services-list h2 {
+            color: #003366;
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .services-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .service-item span.icon {
+            font-size: 22px;
+        }
+
+        .service-item span.text {
+            font-size: 15px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* PROCESS SECTION */
+        .process {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process-title {
+            text-align: center;
+            font-size: 32px;
+            color: #003366;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .process-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            max-width: 700px;
+            margin: 0 auto 60px auto;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .process-step {
+            text-align: center;
+        }
+
+        .process-number {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, #003366 0%, #004C99 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0 auto 18px;
+        }
+
+        .process-step h4 {
+            font-size: 17px;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .process-step p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* HOW IT WORKS */
+        .how-it-works {
+            padding: 80px 20px;
+            background: #f9f9f9;
+        }
+
+        .how-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .how-title {
+            text-align: center;
+            font-size: 32px;
+            color: #003366;
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A2A 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+
+        .step h4 {
+            font-size: 19px;
+            color: #003366;
+            margin-bottom: 12px;
+        }
+
+        .step p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* WHY CHOOSE */
+        .why-choose {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+        }
+
+        .why-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .why-title {
+            text-align: center;
+            font-size: 32px;
+            color: #003366;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .why-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .why-card p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* FINAL CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #003366 0%, #004C99 100%);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .final-cta p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .final-cta-button {
+            background: linear-gradient(135deg, #FF6B35 0%, #E55A2A 100%);
+            color: white;
+            padding: 16px 44px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            display: inline-block;
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #003366;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #FF6B35;
+        }
+
+        .footer-copyright {
+            color: #888;
+            font-size: 13px;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+        }
+
+        .tcpa-disclosure {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .trust-badges {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .how-title,
+            .why-title,
+            .content h2,
+            .services-list h2,
+            .process-title {
+                font-size: 26px;
+            }
+
+            .footer-links a {
+                display: block;
+                margin: 8px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="/">☎️ CallFastPros</a></div>
+            <a href="tel:1-800-CALL-PRO" class="header-cta">☎️ Call Now</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Find & Connect With Local Kitchen Remodeling Contractors</h1>
+            <p>Free, fast connections for cabinets, countertops, flooring, and full kitchen renovations</p>
+
+            <a href="tel:1-800-CALL-PRO" class="hero-cta-btn">📞 CALL A REMODELING PRO NOW</a>
+
+            <div class="trust-badges">
+                <div class="trust-badge">✓ 100% Free Service</div>
+                <div class="trust-badge">✓ Licensed & Insured Contractors</div>
+                <div class="trust-badge">✓ Nationwide Network</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="content">
+        <h2>Connect With Local Kitchen Remodeling Contractors</h2>
+        <p>CallFastPros helps homeowners connect with independent, licensed contractors in their area for kitchen renovation projects of all sizes.</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🍳 Full-Scope Coverage</h3>
+                <p>From a single cabinet refresh to a complete kitchen renovation, our network includes contractors covering a wide range of project sizes.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🏠 Local Contractors</h3>
+                <p>We aim to connect you with an available remodeling contractor serving your area, subject to provider participation.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📋 Independent Professionals</h3>
+                <p>All contractors in our network are independent businesses responsible for their own licensing, insurance, and quality of work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES LIST -->
+    <section class="services-list">
+        <div class="services-list-container">
+            <h2>Kitchen Remodeling Services Our Network May Cover</h2>
+            <div class="services-items">
+                <div class="service-item">
+                    <span class="icon">🗄️</span>
+                    <span class="text">Cabinet Refacing & Replacement</span>
+                </div>
+                <div class="service-item">
+                    <span class="icon">🪨</span>
+                    <span class="text">Countertop Installation</span>
+                </div>
+                <div class="service-item">
+                    <span class="icon">🧱</span>
+                    <span class="text">Backsplash & Tile Work</span>
+                </div>
+                <div class="service-item">
+                    <span class="icon">🪟</span>
+                    <span class="text">Kitchen Flooring</span>
+                </div>
+                <div class="service-item">
+                    <span class="icon">💡</span>
+                    <span class="text">Lighting Updates</span>
+                </div>
+                <div class="service-item">
+                    <span class="icon">🚰</span>
+                    <span class="text">Sink & Faucet Installation</span>
+                </div>
+                <div class="service-item">
+                    <span class="icon">🔌</span>
+                    <span class="text">Electrical Work</span>
+                </div>
+                <div class="service-item">
+                    <span class="icon">🏗️</span>
+                    <span class="text">Layout & Structural Changes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process">
+        <div class="process-container">
+            <h2 class="process-title">A Typical Kitchen Remodel Process</h2>
+            <p class="process-subtitle">Every project is different, but most kitchen renovations generally follow a similar sequence of work.</p>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h4>Cabinets</h4>
+                    <p>Existing cabinets are emptied, cleaned, and either refaced, repainted, or replaced depending on the project scope.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h4>Walls & Ceiling</h4>
+                    <p>Wall and ceiling surfaces are typically prepped and painted, often alongside cabinet work.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h4>Countertops & Sink</h4>
+                    <p>New countertops and sink or faucet installation usually follow once painting and cabinet work are complete.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h4>Appliances & Flooring</h4>
+                    <p>Flooring and appliance placement are generally finalized after the countertop installation.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">5</div>
+                    <h4>Finishing Touches</h4>
+                    <p>Details like hardware, under-cabinet lighting, and backsplash tile are added to complete the space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+        <div class="how-container">
+            <h2 class="how-title">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1️⃣</div>
+                    <h4>Call Us</h4>
+                    <p>Tap the call button to connect with our service line and describe your kitchen project.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2️⃣</div>
+                    <h4>Get Matched</h4>
+                    <p>We aim to connect you with an available local remodeling contractor in your area.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3️⃣</div>
+                    <h4>Get Your Estimate</h4>
+                    <p>The contractor will discuss your project and provide their own estimate for the work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="why-choose">
+        <div class="why-container">
+            <h2 class="why-title">Why Homeowners Use CallFastPros</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <p>Our network connects you with independent, licensed local contractors who specialize in kitchen renovations of all sizes.</p>
+                </div>
+                <div class="why-card">
+                    <p>We aim to connect homeowners with an available service provider quickly, subject to provider participation and availability in your area.</p>
+                </div>
+                <div class="why-card">
+                    <p>All contractors in our network are independent businesses responsible for their own licensing, insurance, and quality of work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <h2>Planning a Kitchen Remodel?</h2>
+        <p>Connect with a local kitchen remodeling contractor in your area today.</p>
+        <a href="tel:1-800-CALL-PRO" class="final-cta-button">📞 CALL NOW: 1-800-CALL-PRO</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
+                <a href="/tcpa-disclosure/">TCPA Disclosure</a>
+                <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+                <a href="mailto:info@callfastpros.com">Contact Us</a>
+            </div>
+
+            <div class="footer-copyright">
+                © 2026 CallFastPros.com. All rights reserved. CallFastPros is a free service that connects users with local independent contractors and service providers.
+            </div>
+
+            <div class="tcpa-disclosure">
+                <strong>TCPA Notice:</strong> By clicking "Call Now" or providing your phone number, you agree to receive calls or texts from CallFastPros and our partner service providers. Standard message and data rates may apply. You can opt-out at any time.
+            </div>
+
+            <div class="tcpa-disclosure" style="margin-top: 15px;">
+                <strong>Disclaimer:</strong> CallFastPros is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and CallFastPros does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
