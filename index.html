@@ -455,6 +455,7 @@
                 <select class="service-dropdown" id="serviceSelect" onchange="handleServiceChange(this.value)">
                     <option value="">Select Service ▼</option>
                     <option value="hvac">🛠️ HVAC & Heating</option>
+                    <option value="kitchen">🍳 Kitchen Remodeling</option>
                     <option value="warehouse">💡 Warehouse Lighting</option>
                     <option value="plumbing">🚰 Plumbing & Water</option>
                 </select>
@@ -479,6 +480,7 @@
                     <ul>
                         <li><a href="/hvac-repair/">HVAC & Heating</a></li>
                         <li><a href="/plumbing/">Plumbing & Water</a></li>
+                        <li><a href="/kitchen-remodeling/">Kitchen Remodeling</a></li>
                     </ul>
                 </div>
 
@@ -585,7 +587,8 @@
                 const urls = {
                     'hvac': '/hvac-repair/',
                     'warehouse': '/warehouse-lighting/',
-                    'plumbing': '/plumbing/'
+                    'plumbing': '/plumbing/',
+                    'kitchen': '/kitchen-remodeling/'
                 };
 
                 if (urls[service]) {
