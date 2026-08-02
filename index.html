@@ -455,9 +455,12 @@
                 <select class="service-dropdown" id="serviceSelect" onchange="handleServiceChange(this.value)">
                     <option value="">Select Service ▼</option>
                     <option value="hvac">🛠️ HVAC & Heating</option>
-                    <option value="kitchen">🍳 Kitchen Remodeling</option>
-                    <option value="warehouse">💡 Warehouse Lighting</option>
                     <option value="plumbing">🚰 Plumbing & Water</option>
+                    <option value="kitchen">🍳 Kitchen Remodeling</option>
+                    <option value="bathroom">🛁 Bathroom Remodeling</option>
+                    <option value="roofing">🏠 Roofing</option>
+                    <option value="flooring">🪵 Flooring</option>
+                    <option value="warehouse">💡 Warehouse Lighting</option>
                 </select>
                 <button class="hero-cta-btn" onclick="callNow()">📞 CALL A PRO NOW</button>
             </div>
@@ -481,6 +484,9 @@
                         <li><a href="/hvac-repair/">HVAC & Heating</a></li>
                         <li><a href="/plumbing/">Plumbing & Water</a></li>
                         <li><a href="/kitchen-remodeling/">Kitchen Remodeling</a></li>
+                        <li><a href="/bathroom-remodeling/">Bathroom Remodeling</a></li>
+                        <li><a href="/roofing/">Roofing</a></li>
+                        <li><a href="/flooring/">Flooring</a></li>
                     </ul>
                 </div>
 
@@ -588,7 +594,10 @@
                     'hvac': '/hvac-repair/',
                     'warehouse': '/warehouse-lighting/',
                     'plumbing': '/plumbing/',
-                    'kitchen': '/kitchen-remodeling/'
+                    'kitchen': '/kitchen-remodeling/',
+                    'bathroom': '/bathroom-remodeling/',
+                    'roofing': '/roofing/',
+                    'flooring': '/flooring/'
                 };
 
                 if (urls[service]) {
@@ -611,4 +620,4 @@
     </script>
 
 </body>
-</html>
+</html>           
